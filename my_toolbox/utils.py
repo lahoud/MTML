@@ -12,7 +12,7 @@ from scipy import ndimage
 
 
 # In[ ]:
-
+random.seed(2)
 
 def get_scene_names(fileloc):
     f = open(fileloc,'r')
