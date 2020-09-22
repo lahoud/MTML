@@ -29,11 +29,11 @@ def main():
 
     parser.add_argument('--resume', action='store_true', help='Resume training from checkpoint')  
     parser.add_argument('--checkpoint_loc', type=str, 
-                        default='./trained_models/iccv_v2_sscnet_multi_spc_v2_train_hpred_trainval/iter_1000/', 
+                        default='./trained_models/iccv_v2_sscnet_multi_spc_v2_train_hpred_train/iter_1000/', 
                         help='Checkpoint location') 
 
     parser.add_argument('--data_loc', type=str, 
-                        default='data/trainval/', 
+                        default='data/train/', 
                         help='Training data location')
     parser.add_argument('--data_loc_val', type=str, 
                         default='data/val/', 
@@ -45,13 +45,13 @@ def main():
     parser.add_argument('--val_size', type=int, default=100, help='Number of validation scenes')
     parser.add_argument('--save_rate', type=int, default=500, help='Save rate')
     parser.add_argument('--savedir', type=str, 
-                        default="./trained_models/iccv_v2_sscnet_multi_spc_v2_train_hpred_trainval/iter_", 
+                        default="./trained_models/iccv_v2_sscnet_multi_spc_v2_train_hpred_train/iter_", 
                         help='Checkpoint save location')    
     args = parser.parse_args()
                      
     ####
 
-    scene_names = tools.get_scene_names('scannet/scannetv2_trainval.txt')
+    scene_names = tools.get_scene_names('scannet/scannetv2_train.txt')
     scene_names_validation = tools.get_scene_names('scannet/scannetv2_val.txt')
 
 
