@@ -33,10 +33,10 @@ def main():
                         help='Checkpoint location') 
 
     parser.add_argument('--data_loc', type=str, 
-                        default='sparseconvnet_h_pred_cvpr/trainval/', 
+                        default='data/trainval/', 
                         help='Training data location')
     parser.add_argument('--data_loc_val', type=str, 
-                        default='sparseconvnet_h_pred_cvpr/val/', 
+                        default='data/val/', 
                         help='Validation data location')                         
 
     parser.add_argument('--max_iter', type=int, default=200000, help='Maximum number of iterations')  
